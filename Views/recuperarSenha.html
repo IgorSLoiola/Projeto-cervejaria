@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/styleAll.css" />
+    <link rel="stylesheet" href="../CSS/styleBTN.css" />
+    <link rel="stylesheet" href="../CSS/styleInput.css" />
+    <link rel="stylesheet" href="../CSS/stylecard.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Recuperar senha</title>
+  </head>
+  <body style="margin: 0">
+    <header class="headerr">
+      <div class="first-colunm-header">
+        <a href="home.html"
+          ><img src="../CSS/img/attachment_86697480.png" class="logo"
+        /></a>
+      </div>
+      <div class="seconds-colunm-header">
+        <ul class="listMenu">
+          <li>
+            <button type="button" class="btn" onclick="navLogin()">
+              <i class="bx bx-user-circle" style="color: #ffffff"></i>
+              <span>Login</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn" onclick="navRegister()">
+              <i class="bx bxs-user-plus" style="color: #ffffff"></i>
+              <span>Registre-se</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <body class="recuperacao-senha">
+      <div>
+        <div class="card">
+          <p>E-mail de recuperação de senha</p>
+          <form action="#" method="post" autocomplete="off" class="formulario">
+            <label for="title">E-mail</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="inputs"
+            />
+            <br /><br />
+            <!-- <input type="submit" value="Enviar"> -->
+            <button class="btnentra" type="button">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </body>
+  </body>
+  <script src="../Controller/recuperarSenha.js"></script>
+  <script src="../Controller/Navegation.js"></script>
+</html>

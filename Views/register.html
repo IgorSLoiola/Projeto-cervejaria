@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/styleAll.css" />
+    <link rel="stylesheet" href="../CSS/styleBTN.css" />
+    <link rel="stylesheet" href="../CSS/styleInput.css" />
+    <link rel="stylesheet" href="../CSS/stylecard.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="../Controller/Navegation.js"></script>
+    <title>Registre-se</title>
+  </head>
+  <body style="margin: 0">
+    <header class="headerr">
+      <div class="first-colunm-header">
+        <a href="home.html"
+          ><img src="../CSS/img/attachment_86697480.png" class="logo"
+        /></a>
+      </div>
+      <div class="seconds-colunm-header">
+        <ul class="listMenu">
+          <li>
+            <button type="button" class="btn" onclick="navLogin()">
+              <i class="bx bx-user-circle" style="color: #ffffff"></i>
+              <span>Login</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn" onclick="navRegister()">
+              <i class="bx bxs-user-plus" style="color: #ffffff"></i>
+              <span>Registre-se</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <body class="gifDeFundo2">
+      <div class="card">
+        <form action="#" method="post" autocomplete="off" class="formulario">
+          <label for="title">Nome completo</label>
+          <br />
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            class="inputs"
+            required
+            placeholder="Nome"
+          />
+          <br />
+          <br />
+          <label for="title">E-mail</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="inputs"
+            required
+            placeholder="E-mail"
+          />
+          <br />
+          <br />
+          <label for="title">Senha</label>
+          <br />
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            class="inputs"
+            required
+            placeholder="Digite a senha"
+          />
+          <br />
+          <br />
+          <label for="title">Confirme a Senha</label>
+          <br />
+          <input
+            type="password"
+            name="ConfirmeSenha"
+            id="ConfirmeSenha"
+            class="inputs"
+            required
+            placeholder="Confirme a Senha"
+          />
+          <!-- <br>
+                  <label for="title">Data de Nascimento</label>
+                  <br>
+                  <input type="date" name="DataNasc" id="DataNasc" class="date"> -->
+          <br /><br />
+          <!-- <input type="submit" value="Enviar"> -->
+          <label for="title">Endereço</label>
+          <br />
+          <br />
+          <textarea
+            name="endereco"
+            id="endereco"
+            cols="30"
+            rows="3"
+            required
+            placeholder="Endereço"
+            class="areaTexto"
+          ></textarea>
+          <div style="display: flex; justify-content: center">
+            <button class="btnentra" type="button" onclick="registrarUsers()">
+              <span>Enviar</span>
+            </button>
+          </div>
+          <div style="display: flex; justify-content: center; margin: 0.5rem">
+            <a href="login.html" class="text-link">
+              <span> Já tem conta? Faça o login aqui! </span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </body>
+  </body>
+  <script src="../Controller/register.js"></script>
+</html>

@@ -1,0 +1,41 @@
+/* gif na paginas de register e login */
+
+.gifDeFundo{
+    background-image: url(../CSS/img/8c3965ea9e75d95523564499c0148f6b.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gifDeFundo2{
+    background-image: url(../CSS/img/A9170355-15C8-48E6-8215-6A121A49ED7B.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* recuperacao-senha */
+
+.recuperacao-senha{
+    background-image: url(../CSS/img/mao-feminina-segurando-tablet-com-icones-de-email.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card{  
+    /* background-color: rgb(32, 32, 32); */
+    position:absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background:rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+    color:antiquewhite;
+}
+
+.text-link{
+    color:aliceblue;
+    text-decoration: none;
+}

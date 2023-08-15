@@ -1,0 +1,234 @@
+.btnentra{
+    border: 1px;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    width: 113px;
+    transition: 0.5s;
+    background-color: chocolate;
+    color: antiquewhite;
+    height: 50px;
+}
+
+.btnentra:hover{
+    background-color:gray;
+}
+
+.btn{
+    border: 1px;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    color: rgb(255, 145, 0);
+    background-color: transparent;
+    /* background-color: #2f302f; */
+    /* padding: 10px; */
+    margin-inline-end: 5px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: gray;
+}
+
+.btnadd{
+    text-align: center;
+    cursor: pointer;
+    padding: 1rem;
+    border: none;
+}
+
+.btnfinalizar{
+    border: 3px;
+    border-radius: 10px;
+    text-align: center;
+    /* user-select: none; */
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: green;
+    color: #ffffff;
+    width: 100px;
+    height: 50px;
+}
+
+.btnclose{
+    border: 3px;
+    border-radius: 10px;
+    text-align: center;
+    /* user-select: none; */
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(255, 145, 0);
+    color: #ffffff;
+    width: 100px;
+    height: 50px;
+}
+
+.btnLimpa{
+    margin-bottom: 5px;
+    border: 3px;
+    border-radius: 10px;
+    text-align: center;
+    /* user-select: none; */
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: red;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+}
+
+.adic{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: 3px;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: green;
+    color: #ffffff;
+    width: 25px;
+    height: 25px;
+}
+
+.remv{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 3px;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: red;
+    color: #ffffff;
+    width: 25px;
+    height: 25px;
+}
+
+.btnsearch{
+    background-color: transparent;
+    position: relative;
+    width: 25px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btnsearch i {
+    font-size: 2rem;
+}
+
+.btnNext{
+    position: relative;
+    left: -40px;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    transition: 0.5;
+    right: 0;
+}
+
+.btnPrev{
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: 0.5;
+}
+
+.btnaddcart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 5rem;
+    height: 2rem;
+}
+
+.btnaddcart:hover{
+    background-color: rgb(1, 78, 1);
+}
+
+/* .btnadd:hover{
+    background-color: rgba(92, 92, 92, 0.678);
+} */
+.btnclose:hover{
+    background-color: rgba(129, 84, 1, 0.678);
+}
+.btnLimpa:hover{
+    background-color: rgba(121, 1, 1, 0.678);
+}
+
+.adic:hover{
+    background-color: rgba(1, 145, 78, 0.678);
+}
+
+.remv:hover{
+    background-color: rgba(121, 1, 1, 0.678);
+}
+
+.btnsearch:hover{
+    background-color: gray;
+}
+
+.btnNext:hover{
+    background-color: gray;
+}
+
+.btnPrev:hover{
+    background-color: gray;
+}
+
+.btn-arrow-left{
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    height: 72%;
+    color: white;
+    border: none;
+}
+
+.btn-arrow-left:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-arrow-left i{
+    font-size: 4rem;
+}
+
+.btn-arrow-right{
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    height: 72%;
+    color: white;
+    border: none;
+}
+
+.btn-arrow-right:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-arrow-right i{
+    font-size: 4rem;
+}

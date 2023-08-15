@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/styleAll.css" />
+    <link rel="stylesheet" href="../CSS/styleBTN.css" />
+    <link rel="stylesheet" href="../CSS/styleInput.css" />
+    <link rel="stylesheet" href="../CSS/stylecard.css" />
+    <link rel="stylesheet" href="../CSS/styledialog.css" />
+
+    <!-- links externos -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- FIM links externos -->
+
+    <title>home</title>
+  </head>
+  <body style="margin: 0; background-color: #e3e6e6">
+    <header class="headd">
+      <div class="logo-home">
+        <img src="../CSS/img/attachment_86697480.png" class="logo" />
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          class="inputtsearch"
+          oninput=""
+          placeholder="O que você procurar?"
+        />
+        <button type="button" class="btnsearch">
+          <i class="bx bx-search-alt" style="color: #fc0202"></i>
+        </button>
+      </div>
+      <div class="btn-head">
+        <ul class="listMenu">
+          <li>
+            <button type="button" class="btn" onclick="openDialog()">
+              <i
+                class="bx bx-shopping-bag"
+                style="color: #ffffff; position: relative; right: -35px"
+              ></i>
+              <i
+                class="bx bxs-message"
+                style="
+                  color: #f90303;
+                  position: relative;
+                  left: 20px;
+                  top: -10px;
+                  font-size: 20px;
+                "
+                ;
+              >
+                <span
+                  class="numeroItem"
+                  style="
+                    position: relative;
+                    left: -23px;
+                    top: -6px;
+                    font-size: medium;
+                    color: antiquewhite;
+                  "
+                  >0</span
+                >
+              </i>
+              <span>Sua sacola</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn" onclick="navLogin()">
+              <i class="bx bx-user-circle" style="color: #ffffff"></i>
+              <span>Login</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn" onclick="navRegister()">
+              <i class="bx bxs-user-plus" style="color: #ffffff"></i>
+              <span>Registre-se</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <body>
+      <div class="slider">
+        <button type="button" onclick="arrowLeft()" class="btn-arrow-left">
+          <i class="bx bx-left-arrow-alt"></i>
+        </button>
+        <div class="slide">
+          <img
+            src="../CSS/img/o-que-e-cerveja-artesanal-imagem-destacada.jpg"
+            id="img1"
+            class="imagens"
+            style="display: block"
+            alt=""
+          />
+        </div>
+        <button type="button" onclick="arrowRight()" class="btn-arrow-right">
+          <i class="bx bx-right-arrow-alt"></i>
+        </button>
+      </div>
+      <br /><br />
+      <main>
+        <h2 style="display: flex; justify-content: center">Bebidas</h2>
+        <div id="data-output" class="listaItem"></div>
+      </main>
+      <dialog id="alertaDialog" class="sacolas">
+        <div class="alerta">
+          <div>
+            <ul class="itensSacola"></ul>
+          </div>
+          <div class="finalizarComprar">
+            <span class="total">0</span>
+            <div>
+              <button type="button" class="btnLimpa" onclick="limpasacola()">
+                <span>Limpa sacola</span>
+              </button>
+            </div>
+            <div class="close">
+              <button type="button" class="btnclose" onclick="closeDialog()">
+                <span>close</span>
+              </button>
+              <button type="button" class="btnfinalizar">
+                <span>finalizar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </body>
+    <footer class="footerDaPagina">
+      <div style="display: flex; justify-content: center">
+        <div class="spacediv">
+          <h3>Fale Conosco</h3>
+          <ul class="footerFaleConosco">
+            <li>
+              <i class="bx bxl-whatsapp-square"></i>
+              <span>Whatsapp</span>
+            </li>
+            <li>
+              <i class="bx bxs-phone"></i>
+              <span>Telefone</span>
+            </li>
+            <li>
+              <i class="bx bxs-envelope"></i>
+              <span>E-mail</span>
+            </li>
+            <li>
+              <i class="bx bxs-map"></i>
+              <span>Localização</span>
+            </li>
+          </ul>
+        </div>
+        <div class="spacediv">
+          <h3>Redes sociais</h3>
+          <ul class="footerRedes">
+            <li>
+              <i class="bx bxl-tiktok"></i>
+              <a
+                href="https://www.tiktok.com/pt-BR/"
+                target="_blank"
+                style="text-decoration: none"
+                >Tik tok</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-facebook-square"></i>
+              <a href="" target="_blank" style="text-decoration: none"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-youtube"></i>
+              <a href="" target="_blank" style="text-decoration: none"
+                >Youtube</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-twitter"></i>
+              <a href="" target="_blank" style="text-decoration: none"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-instagram-alt"></i>
+              <a href="" target="_blank" style="text-decoration: none"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-reddit"></i>
+              <a href="" target="_blank" style="text-decoration: none"
+                >Reddit</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="spacediv">
+          <h3>Trabalhe conosco</h3>
+          <ul class="footerTrabalhe">
+            <li>
+              <span>
+                <i class="bx bxs-envelope"></i>
+                email@trabalheconosco.com
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <img
+          src="../CSS/img/placa_proibido_a_venda_de_bebidas_alcoolicas_para_menores_de_18_anos_1869_1_9e7ca3609d36e11997098ef9928a4ec4.png"
+          alt=""
+          style="width: 200px; height: 200px"
+        />
+      </div>
+      <div>
+        <h3>Formas de pagamentos</h3>
+        <div class="footerFormasPagementos">
+          <img src="../CSS/img/cartao-elo.png" alt="" class="bandeiras" />
+          <img src="../CSS/img/196578.png" alt="" class="bandeiras" />
+          <img src="../CSS/img/download.png" alt="" class="bandeiras" />
+          <img src="../CSS/img/boleto-logo.png" alt="" class="bandeiras" />
+          <img src="../CSS/img/pix-chamada_1.jpg" alt="" class="bandeiras" />
+        </div>
+      </div>
+      <div
+        style="
+          height: 90px;
+          width: 100%;
+          background-color: black;
+          display: flex;
+          justify-content: space-between;
+          margin: auto;
+        "
+      >
+        <span></span>
+      </div>
+      <div style="height: 30px"></div>
+    </footer>
+    <script src="../Controller/home.js"></script>
+    <!-- <script src="../Controller/login.js"></script> -->
+    <script src="../Controller/Navegation.js"></script>
+  </body>
+</html>
