@@ -23,4 +23,8 @@
 
 .areaTexto{
     width: 20rem;
+    background-color: transparent;
+    color: white;
+    resize: none;
+    outline: 0;
 }

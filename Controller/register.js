@@ -71,15 +71,8 @@ function registrarUsers() {
   // var senha = document.querySelector('input[name=senha]');
   // var cofirmSenha = document.querySelector('input[name=ConfirmeSenha]');
 
-  if (
-    eemail !== "" &&
-    password !== "" &&
-    name !== "" &&
-    logradouro !== "" &&
-    cofirmPassword === password
-  ) {
-    validarRegisterUser(eemail, name);
-  }
+  validarRegisterUser(eemail, name);
+
   if (
     eemail !== "" &&
     password !== "" &&
@@ -91,10 +84,6 @@ function registrarUsers() {
     alert("Usuario registrando com sucesso!");
     limpaDados();
     navLogin();
-  } else if (cofirmPassword !== password) {
-    // cofirmPassword.setCustomValidity('As senha não conferem!');
-    limpaSenha();
-    alert("As senha não conferem!");
   } else {
     limpaDados();
     alert("Preenchar os dados corretamente!!");
@@ -138,9 +127,4 @@ function limpaDados() {
   document.getElementById("ConfirmeSenha").value = "";
   document.getElementById("nome").value = "";
   document.getElementById("endereco").value = "";
-}
-
-function limpaSenha() {
-  document.getElementById("senha").value = "";
-  document.getElementById("ConfirmeSenha").value = "";
 }
