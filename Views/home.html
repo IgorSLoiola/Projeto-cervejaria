@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link interno -->
     <link rel="stylesheet" href="../CSS/styleAll.css" />
     <link rel="stylesheet" href="../CSS/styleBTN.css" />
     <link rel="stylesheet" href="../CSS/styleInput.css" />
     <link rel="stylesheet" href="../CSS/stylecard.css" />
     <link rel="stylesheet" href="../CSS/styledialog.css" />
+    <!-- FIM Link interno -->
 
     <!-- links externos -->
     <link
@@ -20,9 +23,10 @@
     />
     <!-- FIM links externos -->
 
-    <title>home</title>
+    <title>Home</title>
   </head>
   <body style="margin: 0; background-color: #e3e6e6">
+    <!-- Header da pagina principal -->
     <header class="headd">
       <div class="logo-home">
         <img src="../CSS/img/attachment_86697480.png" class="logo" />
@@ -87,7 +91,9 @@
         </ul>
       </div>
     </header>
+    <!-- FIM Header da pagina principal -->
     <body>
+      <!-- Slide -->
       <div class="slider">
         <button type="button" onclick="arrowLeft()" class="btn-arrow-left">
           <i class="bx bx-left-arrow-alt"></i>
@@ -105,11 +111,15 @@
           <i class="bx bx-right-arrow-alt"></i>
         </button>
       </div>
+      <!-- FIM Slide -->
       <br /><br />
+      <!-- Itens da loja -->
       <main>
         <h2 style="display: flex; justify-content: center">Bebidas</h2>
         <div id="data-output" class="listaItem"></div>
       </main>
+      <!-- FIM Itens da loja -->
+      <!-- Dialog dos itens do carrinho -->
       <dialog id="alertaDialog" class="sacolas">
         <div class="alerta">
           <div>
@@ -133,7 +143,9 @@
           </div>
         </div>
       </dialog>
+      <!-- FIM Dialog dos itens do carrinho -->
     </body>
+    <!-- Roda pe da pagina principal -->
     <footer class="footerDaPagina">
       <div style="display: flex; justify-content: center">
         <div class="spacediv">
@@ -244,8 +256,8 @@
       </div>
       <div style="height: 30px"></div>
     </footer>
+    <!-- FIM Roda pe da pagina principal -->
     <script src="../Controller/home.js"></script>
-    <!-- <script src="../Controller/login.js"></script> -->
     <script src="../Controller/Navegation.js"></script>
   </body>
 </html>

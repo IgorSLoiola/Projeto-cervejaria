@@ -218,4 +218,10 @@ function arrowRight() {
 
 //FIM botoes para passar o slide
 
+function urlUser() {
+  var urlparameter = new URLSearchParams(window.location.search);
+  console.log(urlparameter.toString());
+}
+
+window.onload = urlUser();
 window.onload = listasDeProdutos();

@@ -59,6 +59,7 @@ function validateUser() {
       break;
     } else {
       document.getElementById("userInvalido").style.display = "block";
+      limpaCampos();
     }
   }
 }
@@ -74,13 +75,14 @@ function addURL(key, value) {
 
 // get URL
 
-var urlparameter = new URLSearchParams(window.location.search);
+var urlparameter;
 function getURL(url) {
   var getParam = url;
   console.log(getParam);
-  return getParam;
 }
 //FIM get URL
+
+// Mensagem de error
 
 function errorSenha() {
   var senha = document.getElementById("senha").value;
@@ -99,3 +101,13 @@ function errorEmail() {
     document.getElementById("emailObrigatorio").style.display = "none";
   }
 }
+
+// FIM Mensagem de error
+
+// Limpa campos
+
+function limpaCampos() {
+  document.getElementById("email").value = "";
+  document.getElementById("senha").value = "";
+}
+// FIM Limpa campos

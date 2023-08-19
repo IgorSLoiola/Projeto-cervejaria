@@ -59,6 +59,8 @@ function checkCaractEmail(Event) {
   }
 }
 
+// validar os dados do usuario
+
 function registrarUsers() {
   var eemail = document.getElementById("email").value;
   var password = document.getElementById("senha").value;
@@ -76,19 +78,42 @@ function registrarUsers() {
     logradouro !== "" &&
     cofirmPassword === password
   ) {
+    validarRegisterUser(eemail, name);
+  }
+  if (
+    eemail !== "" &&
+    password !== "" &&
+    name !== "" &&
+    logradouro !== "" &&
+    cofirmPassword === password
+  ) {
     tablepessoas(eemail, password, name, logradouro);
     alert("Usuario registrando com sucesso!");
+    limpaDados();
     navLogin();
   } else if (cofirmPassword !== password) {
     // cofirmPassword.setCustomValidity('As senha não conferem!');
+    limpaSenha();
     alert("As senha não conferem!");
   } else {
+    limpaDados();
     alert("Preenchar os dados corretamente!!");
   }
 }
 
-// users
+function validarRegisterUser(email, name) {
+  var bancoWebJ = localStorage.getItem("Users");
+  var bancoWeb = JSON.parse(bancoWebJ);
+  for (let i = 0; i < bancoWeb.length; i++) {
+    if (bancoWeb[i].email == email && bancoWeb[i].name == name) {
+      alert("usuario ja cadastrado!");
+    }
+  }
+}
 
+// FIM validar os dados do usuario
+
+// users
 users = [
   {
     email: "igor@gmail.com",
@@ -102,4 +127,20 @@ function tablepessoas(email, password, name, logradouro) {
   users.push({ email, password, name, logradouro });
   var transformJsonString = JSON.stringify(users);
   localStorage.setItem("Users", transformJsonString);
+}
+// FIM users
+
+// limpa_campos
+
+function limpaDados() {
+  document.getElementById("email").value = "";
+  document.getElementById("senha").value = "";
+  document.getElementById("ConfirmeSenha").value = "";
+  document.getElementById("nome").value = "";
+  document.getElementById("endereco").value = "";
+}
+
+function limpaSenha() {
+  document.getElementById("senha").value = "";
+  document.getElementById("ConfirmeSenha").value = "";
 }
