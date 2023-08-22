@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link interno -->
+    <link rel="stylesheet" href="/CSS/styleAll.css" />
+    <link rel="stylesheet" href="/CSS/styleInput.css" />
+    <link rel="stylesheet" href="/CSS/styleBTN.css" />
+    <!-- FIM link interno -->
+
+    <!-- link externo -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/victoria-serif"
+      rel="stylesheet"
+    />
+    <!-- FIM link externo -->
+
+    <title>Buscar</title>
+  </head>
+  <body>
+    <header class="headd">
+      <a class="logo-home" href="home.html">
+        <img src="../CSS/img/attachment_86697480.png" class="logo" />
+      </a>
+      <div class="search">
+        <input
+          type="text"
+          class="inputtsearch"
+          placeholder="O que você procurar?"
+          id="inputBusca"
+        />
+        <button type="button" onclick="filterProdutos()" class="btnsearch">
+          <i class="bx bx-search-alt" style="color: #fc0202"></i>
+        </button>
+      </div>
+      <div class="btn-head">
+        <ul class="listMenu">
+          <li>
+            <button type="button" class="btn" onclick="openDialog()">
+              <i
+                class="bx bx-shopping-bag"
+                style="color: #ffffff; position: relative; left: 0.6rem"
+              ></i>
+              <i
+                class="bx bxs-message"
+                style="
+                  color: #f90303;
+                  position: relative;
+                  top: -10px;
+                  font-size: 1.5rem;
+                "
+                ;
+              >
+                <span
+                  class="numeroItem"
+                  style="
+                    position: relative;
+                    left: -1.7rem;
+                    top: -7px;
+                    font-size: medium;
+                    color: antiquewhite;
+                  "
+                  >0</span
+                >
+              </i>
+              <span style="left: -1.5rem; position: relative">Sua sacola</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn" onclick="navLogin()">
+              <i class="bx bx-user-circle" style="color: #ffffff"></i>
+              <span>Login</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn" onclick="navRegister()">
+              <i class="bx bxs-user-plus" style="color: #ffffff"></i>
+              <span>Registre-se</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <body>
+      <table>
+        <tbody id="tableProdutos"></tbody>
+      </table>
+    </body>
+    <script src="/Controller/Navegation.js"></script>
+    <script src="/Controller/filter.js"></script>
+  </body>
+</html>

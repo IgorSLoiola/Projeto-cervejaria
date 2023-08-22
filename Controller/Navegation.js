@@ -19,3 +19,7 @@ function navHome(url) {
     window.location.href = `home.html`;
   }
 }
+
+function navResulFilter() {
+  window.location.href = "resulFilter.html";
+}

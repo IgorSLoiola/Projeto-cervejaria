@@ -9,6 +9,7 @@
     background-color: chocolate;
     color: antiquewhite;
     height: 50px;
+    font-family: 'Victoria Serif', sans-serif;
 }
 
 .btnentra:hover{
@@ -21,14 +22,15 @@
     text-align: center;
     user-select: none;
     cursor: pointer;
-    width: 150px;
-    height: 50px;
+    width: 10rem;
+    height: 3rem;
     color: rgb(255, 145, 0);
     background-color: transparent;
-    /* background-color: #2f302f; */
-    /* padding: 10px; */
+    padding: 0;
     margin-inline-end: 5px;
     transition: 0.5s;
+    font-size: 1rem;
+    font-family: 'Victoria Serif', sans-serif;
 }
 
 .btn:hover{
@@ -53,6 +55,7 @@
     color: #ffffff;
     width: 100px;
     height: 50px;
+    font-family: 'Victoria Serif', sans-serif;
 }
 
 .btnclose{
@@ -66,6 +69,7 @@
     color: #ffffff;
     width: 100px;
     height: 50px;
+    font-family: 'Victoria Serif', sans-serif;
 }
 
 .btnLimpa{
@@ -80,6 +84,7 @@
     color: #ffffff;
     width: 200px;
     height: 50px;
+    font-family: 'Victoria Serif', sans-serif;
 }
 
 .adic{
@@ -113,12 +118,15 @@
 .btnsearch{
     background-color: transparent;
     position: relative;
-    width: 25px;
-    height: 30px;
+    width: 2rem;
+    height: 3rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btnsearch i {

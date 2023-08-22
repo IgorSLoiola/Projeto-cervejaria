@@ -19,14 +19,14 @@ var produtos = [
   {
     id: 2,
     img: "cerveja-lata-17515.jpg",
-    nome: "Latão",
+    nome: "Latao",
     descricao: "Brahma/Skol/Antartica",
     preco: 4.5,
   },
   {
     id: 3,
     img: "11026_1.jpg",
-    nome: "Latão",
+    nome: "Latao",
     descricao: "Heineken",
     preco: 5.99,
   },
@@ -217,6 +217,26 @@ function arrowRight() {
 }
 
 //FIM botoes para passar o slide
+
+// Filtro produtos
+
+function filterProdutos() {
+  const valorCampo = document.querySelector("#inputBusca").value;
+  const produtosFiltrados = produtos.filter((obj) => {
+    return obj.nome.toUpperCase().startsWith(valorCampo.toUpperCase());
+  });
+
+  let transformJsonString = JSON.stringify(produtosFiltrados);
+  localStorage.setItem("prdutos", transformJsonString);
+
+  // for (let i = 0; i < produtosFiltrados.length; i++) {
+  //   let transformJsonString = JSON.stringify(produtosFiltrados[i]);
+  //   localStorage.setItem("Users", transformJsonString);
+  // }
+  navResulFilter();
+}
+
+//FIM Filtro produtos
 
 function urlUser() {
   var urlparameter = new URLSearchParams(window.location.search);

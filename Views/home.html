@@ -18,6 +18,11 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.cdnfonts.com/css/victoria-serif"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
@@ -35,10 +40,10 @@
         <input
           type="text"
           class="inputtsearch"
-          oninput=""
           placeholder="O que você procurar?"
+          id="inputBusca"
         />
-        <button type="button" class="btnsearch">
+        <button type="button" onclick="filterProdutos()" class="btnsearch">
           <i class="bx bx-search-alt" style="color: #fc0202"></i>
         </button>
       </div>
@@ -48,16 +53,15 @@
             <button type="button" class="btn" onclick="openDialog()">
               <i
                 class="bx bx-shopping-bag"
-                style="color: #ffffff; position: relative; right: -35px"
+                style="color: #ffffff; position: relative; left: 0.6rem"
               ></i>
               <i
                 class="bx bxs-message"
                 style="
                   color: #f90303;
                   position: relative;
-                  left: 20px;
                   top: -10px;
-                  font-size: 20px;
+                  font-size: 1.5rem;
                 "
                 ;
               >
@@ -65,15 +69,15 @@
                   class="numeroItem"
                   style="
                     position: relative;
-                    left: -23px;
-                    top: -6px;
+                    left: -1.7rem;
+                    top: -7px;
                     font-size: medium;
                     color: antiquewhite;
                   "
                   >0</span
                 >
               </i>
-              <span>Sua sacola</span>
+              <span style="left: -1.5rem; position: relative">Sua sacola</span>
             </button>
           </li>
           <li>
